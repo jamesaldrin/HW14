@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Sans Rival</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="ProductPage.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Knewave" rel="stylesheet">
+
+  </head>
+  <body>
+    
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong>Hoy!</strong> Pickup Orders will be ready in as little as 15 minutes.
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+    
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a id="logoText" class="navbar-brand" href="#">Hopia Like It!</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Order</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Menu
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Pickup</a>
+                <a class="dropdown-item" href="#">Shipping</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Delivery</a>
+                </div>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button id="searchButton" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+    </nav>
+
+    <script>
+        $('#navId a').click(e => {
+            e.preventDefault();
+            $(this).tab('show');
+        });
+    </script>
+
+<section id="heroSection" class="container">
+    <div class="row">
+        <div id="productCard" class="col-12 d-none d-lg-inline-block">
+            <div class="infoCard">
+                <div id="itemName" class="col-12">
+                    <h1>Sans Rival</h1> 
+                </div>
+                <div>
+                    <a href="#" class="btnLabel btn btn-warning disabled" role="button">Cake</a>
+                </div>
+                <div id="itemPrice" class="col-12">
+                    <h3>Price</h3>
+                    <h4>$19.99</h4>
+                    <div id="itemForm" class="col-3 input-group mb-3">
+                            <div class="input-group-prepend">
+                            <label class="input-group-text" for="inputGroupSelect01">Quantity</label>
+                            </div>
+                            <select class="custom-select" id="inputGroupSelect01">
+                            <option selected>Choose...</option>
+                            <option value="1">1/2 Sheet</option>
+                            <option value="2">3/4 Sheet</option>
+                            <option value="3">Full Sheet</option>
+                            </select>
+                    </div>        
+                </div>
+                <div id="CTAaddToCart" class="col-12">
+                    <a class="CTAaddToCart" href="#" role="button">Add To Cart</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-auto d-lg-none">
+            <img class="medScreen" src="images/SansRival-BG.jpg">
+            <h1>Sans Rival</h1>
+        </div>
+        <div class="col-auto d-lg-none">
+            <a href="#" class="btnLabel btn btn-warning disabled" role="button">Cake</a>
+        </div>
+        <div class="col-12 d-lg-none">
+            <p>Item description</p>
+        </div>
+        <div class="row">
+            <div class="col-12 d-lg-none item-info">
+            <h3>Price</h3>
+            <h4>$19.99</h4>
+            <div class="col-12 d-lg-none input-group mb-3">
+                    <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01">Quantity</label>
+                    </div>
+                    <select class="custom-select" id="inputGroupSelect01">
+                    <option selected>Choose...</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                    </select>
+            </div>        
+            </div>
+            <div class="col-12 d-lg-none">
+                <a name="" id="CTAaddToCart" href="#" role="button">
+                </a>
+            </div>
+    </div>
+</section>
+<section class="container">
+    <div class="row">
+        <div class="col-12">
+            <h2 class="product-info">Product Information</h2>
+                <div id="accordion" class="d-lg-none">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Description
+                            </button>
+                            </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Details
+                            </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="d-none d-lg-block">
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Description</a>
+                        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Details</a>
+                    </div>
+                </nav>
+                    <div class="tab-content d-none d-lg-block" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
+                    </div>
+        </div>
+        <div class="col-12">
+            <h2>Similar Items</h2>
+        </div>
+        <div class="col-6 col-sm-6 col-lg-3">
+            <a href="https://placeholder.com"><img src="http://via.placeholder.com/200X200/ffa500" class="img-fluid"></a>
+        </div>
+        <div class="col-6 col-sm-6 col-lg-3">
+            <a href="https://placeholder.com"><img src="http://via.placeholder.com/200X200/ffa500" class="img-fluid"></a>
+        </div>
+        <div class="col-6 col-sm-6 col-lg-3">
+            <a href="https://placeholder.com"><img src="http://via.placeholder.com/200X200/ffa500" class="img-fluid"></a>
+        </div>
+        <div class="col-6 col-sm-6 col-lg-3">
+            <a href="https://placeholder.com"><img src="http://via.placeholder.com/200X200/ffa500" class="img-fluid"></a>
+        </div>
+    <div class="col-4 offset-4">
+        <a name="" id="" class="btn btn-secondary" href="#" role="button">Do You Need Help?</a>
+    </div>
+
+</section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

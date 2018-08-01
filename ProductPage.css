@@ -1,0 +1,130 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    color: #311910;
+}
+
+@media (min-width: 1200px)
+.container {
+    max-width: 2000px;
+}
+
+@media (min-width: 992px)
+.container {
+    max-width: 1199px;
+}
+
+@media (min-width: 768px)
+.container {
+    max-width: 991px;
+}
+
+h1 {
+    font-family: 'Knewave', cursive;
+}
+
+h2 {
+    color: rgb(49, 25, 16);
+}
+
+h3 {
+        font-size: 1rem;
+        font-weight: bold;
+}
+
+h4 {
+    font-weight:bolder;
+    color: rgb(255, 79, 79);
+}
+
+div {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#logoText {
+    font-weight: bolder;
+}
+
+#searchButton {
+    color: #ffc107;
+    border-color: #ffc107;
+}
+
+#searchButton:hover {
+    color:white;
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+
+#heroSection {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 0 20px;
+    padding: 0px 0px;
+}
+
+#productCard {
+    background-image: url("images/SansRival-BG.jpg");
+    height: 700px;
+    position: relative;
+}
+
+#itemName {
+    padding: 0px 0px;
+}
+
+#itemPrice {
+    padding: 10px 0px;
+}
+
+#itemForm {
+    padding: 0px 0px;
+}
+
+#CTAaddToCart {
+    padding: 0px 0px;
+}
+
+.CTAaddToCart {
+    background-image: url("images/Button/Type/CTA.svg");
+    background-repeat: no-repeat;
+    color: rgb(48, 27, 7);
+    padding: 12px 40px;
+    background-size: contain;
+}
+
+.CTAaddToCart:hover {
+    background-image: url("images/Button/Type/hover.svg");
+    background-repeat: no-repeat;
+    color: rgb(48, 27, 7);
+    padding: 12px 40px;
+    background-size: contain;
+    text-decoration: none;
+}
+
+.infoCard {
+    position: relative;
+    top: 385px;
+    padding: 0 50px;
+}
+
+.medScreen {
+    width: 500px;
+    overflow: hidden;
+}
+
+.ADCdiv {
+    height: 80px;
+}
+
+.productLabel {
+    color: rgb(224, 46, 26);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.btnLabel {
+    background-color: rgb(224, 46, 26);
+    font-size: 16px;
+}
